@@ -11,8 +11,8 @@ If not, the .ino file still gives you a starting guide on how to implement the d
 
 # Hardware Setup
 To maximise the resolution to 16 bit, the reference voltage must be 1.65V!
-Here is the setup
-[image](https://user-images.githubusercontent.com/64581094/173102912-ea3950ea-a83a-4504-9a87-7f997dcfe979.png)
+
+[Click here to see pin configuration](https://user-images.githubusercontent.com/64581094/173102912-ea3950ea-a83a-4504-9a87-7f997dcfe979.png)
 
 >N.B. The driver is currently configured to run on the ESP32 with pins:
 - dataReady = 17
