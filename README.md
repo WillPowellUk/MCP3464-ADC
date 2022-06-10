@@ -7,4 +7,4 @@ I have not made it portable for any microcontroller, however feel free to fork t
 
 # Setup
 If you have arduino, simply upload the .ino file.  
-
+If not, the .ino file still gives you a starting guide on how to implement the driver.
