@@ -61,9 +61,14 @@ void MCP3464::init()
   digitalWrite(adcChipSelectPin, HIGH);  
   // initialise SPI:
   SPI.begin();
-  SPI.setBitOrder(MSBFIRST);         // Not strictly needed but just to be sure.
-  SPI.setDataMode(SPI_MODE0);        // Not strictly needed but just to be sure.
-  SPI.setFrequency(20000000);        // The maximum frequency of the ADC is 20MHz
+
+  SPI.beginTransaction(SPISettings(20000000, MSBFIRST, SPI_MODE0)); 
+  //set frequency to be 20 MHz,  bit order to Most Sig. first, set SPI mode to 0. 
+  //See Arduino SPI library documentation for details
+
+  //SPI.setBitOrder(MSBFIRST);         // Not strictly needed but just to be sure.
+  //SPI.setDataMode(SPI_MODE0);        // Not strictly needed but just to be sure.
+  //SPI.setFrequency(20000000);        // The maximum frequency of the ADC is 20MHz
 
   unsigned char data[5];   
 
